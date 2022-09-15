@@ -16,6 +16,7 @@ const handler: NextApiHandler = async (req, res) => {
     const places = await db.place.findMany();
 
     res.status(200).json({ data: places });
+    return;
   }
 
   if (req.method === "POST") {

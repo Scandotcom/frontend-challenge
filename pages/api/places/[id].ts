@@ -19,11 +19,10 @@ const PrismaKnownError = t.type({ meta: t.type({ cause: t.string }) });
  * Extracts the reason for a DB operation failing by getting the cause from the
  * Prisma error. Returns the fallback message if no cause is present.
  *
- * @param fallbackMessage
- * @returns `String`
+ * @param fallbackMessage String
  */
-const getPrismaErrorCause = (fallbackMessage: string) => (error: unknown) =>
-  pipe(
+const getPrismaErrorCause = (fallbackMessage: string) => (error: unknown) => {
+  return pipe(
     Object.assign({}, error),
     PrismaKnownError.decode,
     E.fold(
@@ -31,6 +30,7 @@ const getPrismaErrorCause = (fallbackMessage: string) => (error: unknown) =>
       (error) => error.meta.cause
     )
   );
+};
 
 const handler: NextApiHandler = async (req, res) => {
   const id = req.query.id;
@@ -38,6 +38,15 @@ const handler: NextApiHandler = async (req, res) => {
   if (typeof id !== "string") {
     res.status(400).send("Invalid request");
     return;
+  }
+
+  if (req.method === "GET") {
+    const place = await db.place.findFirst({ where: { id } });
+    if (place) {
+      res.status(200).json({ data: place });
+      return;
+    }
+    res.status(404).send("Not found");
   }
 
   if (req.method === "DELETE") {
