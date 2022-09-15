@@ -1,4 +1,4 @@
-# Scan Frontend Challenge
+# Scan.com Frontend Challenge
 
 The challenge is to build a UI for this project that allows a user to save their favorite places and display them on a map. A user should be able to add places to their list by choosing a location somehow and/or interacting with a form of some type.
 
