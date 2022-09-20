@@ -18,7 +18,7 @@ An http API is provided to allow persisting, updating, deleting and retrieving p
 - Self-explanatory code. An unfamiliar developer should be able to figure out what's going on without the need for huge comments.
 - Consideration of errors and edge cases.
 
-It is expected that around 1-2 hours are to be spent on this task.
+It is expected that around 2-4 hours are to be spent on this task.
 
 ## Deliverables
 
