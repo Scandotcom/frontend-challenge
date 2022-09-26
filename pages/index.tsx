@@ -18,7 +18,7 @@ const Home: NextPage = () => {
         <ScanLogo className="text-pink-500 w-28" />
         <h1 className="text-3xl font-semibold">Scan Places</h1>
       </header>
-      <main></main>
+      <main>{/* Frontend goes here */}</main>
     </div>
   );
 };
