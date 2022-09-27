@@ -2,31 +2,23 @@
 
 The challenge is to build a front-end for this project that allows a user to save their favorite places and display them on a map. A user should be able to add places to their list by choosing a location somehow and/or interacting with a form of some type.
 
-A map should be rendered that display their saved places and updates as they add/remove places.
+A simple map should be rendered that display their saved places and updates as they add/remove places.
 
 The UI should be built using React that is rendered as part of this application. A barebones page has been added at `pages/index.tsx`.
 
-An http API is provided to allow persisting, updating, deleting and retrieving places. See the API section below.
+An HTTP API is provided to allow persisting, updating, deleting and retrieving places. See the API section below.
 
-## What are we looking for
-
-- Working code that fulfulls the brief
-- Clean, well-organised component structure that follows React principles and best practices.
-- Attention to accessibilty and semantic markup.
-- Appropriate testing to give confidence the UI works as intended.
-- Simplicity: We value simplicity as an architectural virtue and a development practice. Solutions should reflect the difficulty of the assigned task, and should not be overly complex.
-- Self-explanatory code. An unfamiliar developer should be able to figure out what's going on without the need for huge comments.
-- Some consideration of errors and edge cases, although we don't expect every case to be covered, given the time constraints.
-
-It is expected that around 2-4 hours are to be spent on this task.
+It is expected that around **2-4** hours** are to be spent on this task.
 
 ## Deliverables
 
-Clone or download this repository and follow the instructions below to get started. Add your frontend code, starting from `pages/index.tsx` (see [Next routing docs][next-routing]). You should aim to commit as you go and follow good git practices (small commits, well thought-out commit messages, etc).
+Clone or download this repository and follow the instructions below to get started. 
+
+Add your frontend code, starting from `pages/index.tsx` (see [Next routing docs][next-routing]).
 
 Send the project with your additions to us as a zip file or [git bundle][git-bundle]. Please do not publish it in a public Github repo (or equivalent) or submit a PR to this repo.
 
-Include a document explaining your approach and any decisions you made as well as any additional requirements and/or commands needed to run the project.
+Optionally include a document explaining your approach and any decisions you made as well as any additional requirements and/or commands needed to run the project.
 
 ## Getting Started
 
